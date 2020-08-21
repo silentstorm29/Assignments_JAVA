@@ -23,16 +23,16 @@ public class Calculator
 {
 	public static void main(String arg[])
 	{
-		one calc =(a,b)->(a+b);
+		A calc =(a,b)->(a+b);
 		System.out.println(calc.add(4,3));
 
-		two calc1 =(a,b)->(a-b);
+		B calc1 =(a,b)->(a-b);
 		System.out.println(calc1.difference(4,3));
 
-		three calc2 =(a,b)->(a*b);
+		C calc2 =(a,b)->(a*b);
 		System.out.println(calc2.product(4,3));
 
-		four calc3 =(a,b)->(a/b);
+		D calc3 =(a,b)->(a/b);
 		System.out.println(calc3.safeDivision(4,3));
 	}
 }
