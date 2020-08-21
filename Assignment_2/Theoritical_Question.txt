@@ -40,3 +40,84 @@ id [] = [1000, 1010, 1050, 2000, 2040, …..].
 And if we want to insert a new ID 1005, then to maintain the sorted order, we have to move all the elements after 1000 (excluding 1000).
 Deletion is also expensive with arrays until unless some special techniques are used. For example, to delete 1010 in id [], everything after 1010 has to be moved.
 
+Question 5: What is the use of a doubly-linked list when compared to that of a singly
+linked list?
+Answer:
+A DLL can be traversed in both forward and backward direction.
+The delete operation in DLL is more efficient if a pointer to the node to be deleted is given.
+We can quickly insert a new node before a given node.
+In a singly linked list, to delete a node, a pointer to the previous node is needed. To get this previous node, sometimes the list is traversed. In DLL, we can get the previous node using the previous pointer.
+
+Question 6:What is the difference between an Array and Stack?
+Answer: Definition- An array is a data structure consisting of a collection of elements each identified by the array index. In contrast, a stack is an abstract data type that serves as a collection of elements with two principal operations: push and pop. Thus, this is the main difference between Array and Stack. Data Types - Also, another difference between Array and Stack is that an array contains elements of the same data type while a stack contains elements of different data types.Basic Operations Furthermore, basic operations of an array include insert, delete, modify, traverse, sort, search, and merge while basic operations of the stack are push, pop, and peek. Access Elements In an array, any element can be accessed using the array index. However, in a stack, only the topmost element can be read or removed at a time. Hence, this is also a difference between Array and Stack.
+In brief, array and stack are two major data structures. The main difference between Array and Stack is that Array stores elements of the same type while Stack stores elements of different types.
+
+Question 7:What is the minimum number of Queues needed to implement the priority
+queue?
+Answer: Two queues. One is used for storing data and another is used for priorities.
+
+Question 8:What are the different types of traversal techniques in a tree?
+Answer:  Inorder, Preorder, Postorder, Level Order
+
+Question 9: Why it is said that searching a node in a binary search tree is efficient than that of
+a simple binary tree?
+Answer: It supports three main operations: searching of elements, insertion of elements, and deletion of elements. Binary Search Tree allows for fast retrieval of elements stored in the tree as each node key is thoroughly compared with the root node, which discards half of the tree.
+
+Question 10:  What are the applications of Graph DS?
+Answer: 
+Facebook’s Graph API uses the structure of Graphs.
+Google’s Knowledge Graph also has to do something with Graph.
+Dijkstra algorithm or the shortest path first algorithm also uses graph structure to finding the smallest path between the nodes of the graph.
+GPS navigation system also uses shortest path APIs.
+
+
+
+
+Question 11: Can we apply a Binary search algorithm to a sorted Linked list?
+Answer: Yes, a Binary search is possible on the linked list if the list is ordered and you know the count of elements in the list. But While sorting the list, you can access a single element at a time through a pointer to that node i.e. either a previous node or next node.
+
+Question 12: When can you tell that a Memory Leak will occur?
+Answer: In computer science, a memory leak is a type of resource leak that occurs when a computer program incorrectly manages memory allocations in a way that memory which is no longer needed is not released. A memory leak may also happen when an object is stored in memory but cannot be accessed by the running code.
+
+Question 13: How will you check if a given Binary Tree is a Binary Search Tree or not?
+Answer: A binary search tree (BST) is a node based binary tree data structure which has the following properties.
+• The left subtree of a node contains only nodes with keys less than the node’s key.
+• The right subtree of a node contains only nodes with keys greater than the node’s key.
+• Both the left and right subtrees must also be binary search trees.
+From the above properties it naturally follows that:
+• Each node (item in the tree) has a distinct key.
+
+Question 14: Which data structure is ideal to perform recursion operation and why?
+Answer: Stack. Because of its LIFO (Last In First Out) property, it remembers its 'caller' so knows whom to return when the function has to return. Recursion makes use of system stack for storing the return addresses of the function calls. Every recursive function has its equivalent iterative (non-recursive) function.
+
+Question 15: What are some of the most important applications of a Stack?
+Answer: Three applications of stacks are presented here.  These examples are central to many activities that a computer must do and deserve time spent with them.
+-Expression evaluation
+-Backtracking (game playing, finding paths, exhaustive searching)
+-Memory management, run-time environment for nested language features.
+
+
+Question 16: Convert the below-given expression to its equivalent Prefix And Postfix notations.
+Answer: Algorithm for Prefix to Postfix:
+    -Read the Prefix expression in reverse order (from right to left)
+    -If the symbol is an operand, then push it onto the stack
+    -If the symbol is an operator, then pop two operands from the Stack
+    -Create a string by concatenating the two operands and the operator after them.
+    -string = operand1 + operand2 + operator
+    -And push the resultant string back to Stack
+    -Repeat the above steps until the end of Prefix expression.
+
+Question 17: Sorting a stack using a temporary stack
+Answer: 
+    -Create a temporary stack say tmpStack.
+    -While input stack is NOT empty do this:
+    -Pop an element from input stack call it temp
+    -while temporary stack is NOT empty and top of temporary stack is greater than temp,
+    -pop from temporary stack and push it to the input stack
+    -push temp in temporary stack
+    -The sorted numbers are in tmpStack
+
+Question: 18 Program to reverse a queue
+Answer: This will be a two-step process:
+-Pop the elements from the queue and insert into the stack. (Topmost element of the stack is the last element of the queue)
+-Pop the elements of the stack to insert back into the queue. (The last element is the first one to be inserted into the queue)
