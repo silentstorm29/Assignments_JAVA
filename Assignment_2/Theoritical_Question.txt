@@ -1,0 +1,42 @@
+Question1. What is Data Structures?
+Answer: It is a way of data organizing, management, and storage with optimized ways of modification and access. Simply we can say its a storage of data values with relation, function, or different Operations.
+
+
+Question 2. What are the different applications of DS?
+Answer:  Arrays: 
+-Arrangement of leader-board of a game can be done simply through arrays to store the score and arrange them in descending order to clearly make out the rank of each player in the game.
+-A simple question Paper is an array of numbered questions with each of them assigned to some marks. 
+-2D arrays, commonly known as, matrix are used in image processing.
+-It is also used in speech processing, in which each speech signal is an array.
+Linked List:
+-Images are linked with each other. So, an image viewer software uses a linked list to view the previous and the next images using the previous and next buttons.
+-Web pages can be accessed using the previous and the next URL links which are linked using a linked list.
+-The music players also use the same technique to switch between music.
+-To keep the track of turns in a multiplayer game, a circular linked list is used.
+Stack:
+-Converting infix to postfix expressions.
+-Undo operation is also carried out through stacks.
+-Syntaxes in languages are parsed using stacks.
+-It is used in many virtual machines like JVM.
+Queue:
+-Operating Systems use a queue for job scheduling.
+-To handle congestion in a networking queue can be used.
+-Data packets in communication are arranged in queue format.
+Tree:
+-XML Parser uses tree algorithms.
+-A decision-based algorithm is used in machine learning which works upon the algorithm of the tree.
+-Databases also use tree data structures for indexing.
+-Domain Name Server(DNS) also uses tree structures.
+And So on…
+
+
+Question 3: What are the advantages of the linked list over an array?
+Answer: 
+-Dynamic size As the size of the linked list is not fixed so we can add or remove as many elements as required. But in the array we have to pre-define the array size which we can’t change later.
+Ease of insertion/deletion
+-Inserting a new element in an array of elements is expensive; because the room has to be created for the new elements and to create room existing elements have to shift.
+-For example, suppose we maintain a sorted list of IDs in an array id [].
+id [] = [1000, 1010, 1050, 2000, 2040, …..].
+And if we want to insert a new ID 1005, then to maintain the sorted order, we have to move all the elements after 1000 (excluding 1000).
+Deletion is also expensive with arrays until unless some special techniques are used. For example, to delete 1010 in id [], everything after 1010 has to be moved.
+
