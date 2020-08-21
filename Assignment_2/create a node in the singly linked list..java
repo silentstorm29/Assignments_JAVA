@@ -33,8 +33,7 @@ public class SinglyLinkedList {
             tail = newNode;  
         }  
     }  
-      
-    //display() will display all the nodes present in the list  
+  
     public void display() {  
         //Node current will point to head  
         Node current = head;  
@@ -62,7 +61,7 @@ public class SinglyLinkedList {
         sList.addNode(3);  
         sList.addNode(4);  
           
-        //Displays the nodes present in the list  
+        
         sList.display();  
     }  
 }  
