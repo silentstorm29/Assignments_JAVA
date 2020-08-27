@@ -17,3 +17,4 @@ class Smallest element {
 		System.out.print("K'th smallest element is " + kthSmallest(arr, k)); 
 	} 
 } 
+gi
